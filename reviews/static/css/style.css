@@ -1,3 +1,14 @@
 body{
-    background-color: rgb(71, 192, 192);  
+   /* background-color: rgb(71, 192, 192);  */
+   background-color: red;
+
 }
+form {
+    margin-bottom: 10px;
+    background-color: red;
+    border:0;
+    padding: 6px 10px;
+    font-size: 20px;
+    width: 30%;
+}
+
