@@ -1,3 +1,23 @@
 body{
-    background-color: rgb(71, 192, 192);  
+   background-color: rgb(71, 192, 192); 
+
 }
+input, textarea {
+    margin-bottom: 10px;
+    background-color: rgb(0, 76, 255);
+    border:0;
+    padding: 6px 10px;
+    font-size: 20px;
+    width: 30%;
+
+}
+input[type = submit] {
+font-weight:bold;
+background-color: cornflowerblue;
+color: cornsilk;
+padding: 10 px 20 px;
+font-size:20 px;
+width: auto;
+}
+
+

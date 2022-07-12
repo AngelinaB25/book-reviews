@@ -1,1 +1,45 @@
 {% extends 'base.html' %}
+{% block content %}
+<h1>
+    Hello guys! You came to BookWorld
+</h1>
+<div class = "review-form">
+    <h2>
+        make review
+    </h2>
+    <form>
+        <p>
+            <input type = "text" placeholder = "type youe name">
+        </p>
+        <p>
+            <input type = "text" placeholder = "type your email">
+        </p>
+        <p>
+            <textarea placeholder="type your review" cols="50" rows="5">
+
+            
+            </textarea>
+        </p>
+        <p>
+            <input type = "submit" value = "keep the review">
+        </p>
+    </form>
+</div>
+<div class = "reviews">
+    <h2>
+        all reviews
+    </h2>
+    <h1>
+        Max
+    </h1>
+    <h1>
+        review
+    </h1>
+    <h1>
+        Dina
+    </h1>
+    <h1>
+        review
+    </h1>
+</div>
+{% endblock %}
