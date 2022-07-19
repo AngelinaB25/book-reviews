@@ -20,4 +20,9 @@ font-size:20 px;
 width: auto;
 }
 
+label {
+    display: block;
+    font-size: 20px;
+}
+
 
