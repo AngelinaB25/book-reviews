@@ -7,15 +7,15 @@
     <h2>
         make review
     </h2>
-    <form>
+    <form method = "GET">
         <p>
-            <input type = "text" placeholder = "type youe name">
+            <input type = "text" name = "name" placeholder = "type youe name">
         </p>
         <p>
-            <input type = "text" placeholder = "type your email">
+            <input type = "text" name = "email" placeholder = "type your email">
         </p>
         <p>
-            <textarea placeholder="type your review" cols="50" rows="5">
+            <textarea name = "review" placeholder="type your review" cols="50" rows="5">
 
             
             </textarea>
@@ -23,6 +23,7 @@
         <p>
             <input type = "submit" value = "keep the review">
         </p>
+        {{ form.as_p }}
     </form>
 </div>
 <div class = "reviews">
@@ -30,16 +31,13 @@
         all reviews
     </h2>
     <h1>
-        Max
+        {{ name }}
     </h1>
     <h1>
-        review
+        {{ review }}
     </h1>
     <h1>
-        Dina
-    </h1>
-    <h1>
-        review
+        {{ email }}
     </h1>
 </div>
 {% endblock %}
