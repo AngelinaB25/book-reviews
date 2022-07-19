@@ -7,23 +7,13 @@
     <h2>
         make review
     </h2>
-    <form method = "GET">
-        <p>
-            <input type = "text" name = "name" placeholder = "type youe name">
-        </p>
-        <p>
-            <input type = "text" name = "email" placeholder = "type your email">
-        </p>
-        <p>
-            <textarea name = "review" placeholder="type your review" cols="50" rows="5">
-
-            
-            </textarea>
-        </p>
+    <form method = "POST">
+    {% csrf_token %}
+        
+        {{ form.as_p }}
         <p>
             <input type = "submit" value = "keep the review">
         </p>
-        {{ form.as_p }}
     </form>
 </div>
 <div class = "reviews">
