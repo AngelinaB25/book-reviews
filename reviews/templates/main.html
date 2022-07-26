@@ -20,14 +20,18 @@
     <h2>
         all reviews
     </h2>
-    <h1>
-        {{ name }}
-    </h1>
-    <h1>
-        {{ review }}
-    </h1>
-    <h1>
-        {{ email }}
-    </h1>
+    {%for review in reviews%}
+    <p>
+        <em>
+            {{review.name}}
+        </em>
+    </p>
+    <p>
+        {{review.review}}
+    </p>
+    <p>
+        {{review.rating}}
+    </p>
+    <hr> {%endfor%}
 </div>
 {% endblock %}
