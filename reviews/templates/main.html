@@ -21,16 +21,16 @@
         all reviews
     </h2>
     {%for review in reviews%}
-    <p>
+    <p class = "user">
         <em>
             {{review.name}}
         </em>
     </p>
-    <p>
-        {{review.review}}
+    <p class = "review-text">
+        отзев:{{review.review}}
     </p>
-    <p>
-        {{review.rating}}
+    <p class = "rating">
+        оценка:{{review.rating}}/10
     </p>
     <hr> {%endfor%}
 </div>

@@ -25,4 +25,18 @@ label {
     font-size: 20px;
 }
 
+.review-text {
+    font-size: large;
+}
+
+.user {
+    font-size: 15px;
+    font-style: italic;
+}
+
+.rating {
+    color: green;
+    font-weight: bolder;
+}
+
 
